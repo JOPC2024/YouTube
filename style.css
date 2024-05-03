@@ -1,0 +1,144 @@
+@import url("responsive.css");
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    background-color: #0F0F0F;
+}
+#contenedorSuperior{
+    width: 100%;
+    height: 56px;
+    padding:0px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+}
+#izquierdo{
+    width: 300px;
+    display: flex;
+    align-items: center;
+}
+#menu
+{
+    width: 20px;
+    height: 20px;
+    clip-path: circle(50%);
+    margin-top:0px;
+    padding:10px;
+}
+#menu > button
+{
+    width: 20px;
+    height: 20px;
+    border:none;
+    background: none;
+}
+#menu:hover{
+    background-color:#272727;
+}
+#menu > button > div {
+    border: 0.2px white solid;
+    margin:4px 0px 4px 0px;
+}
+#logo-icon{
+    width: 90px;
+    height: 20px;
+    padding: 18px 14px 18px 16px;
+}
+#centro{
+    width: 632px;
+    height: 40px;
+    background-color: #0F0F0F;
+    /*border:2px #272727 solid; */
+    align-items: center;
+    display:flex;
+}
+#searchbox{
+    display:flex;
+}
+#search{
+    border: 2px #272727 solid;
+    width: 490px;
+    height: 40px;    
+    visibility: visible;
+    border-radius: 20px 0px 0px 20px;
+    display: flex;
+    align-items: center;
+}
+#search > #lupaizq > img{
+    width: 20px;
+    height: 20px;
+    margin:15px;
+    display:none;
+}
+#search > input{
+    background-color:transparent;
+    border:none;
+    color:aliceblue;
+    width: 490px;
+    height: 24px;
+}
+#search > input:focus{
+    outline: none;
+
+}
+#search:has(input:focus){
+    border: 2px #1C62B9 solid;
+    width: 515px;
+    height: 40px;
+}
+#search:has(input:focus) > #lupaizq > img {
+    display: block;
+}
+#searchbox > #lupaboton{
+    background-color:#272727;
+    width: 60px;
+    height: 40px;
+    border-radius: 0px 20px 20px 0px;
+    border:2px #272727 solid
+}
+#searchbox > #lupaboton > button{
+    width: 25px;
+    height: 25px;
+    border: none;
+    background-color: transparent;
+    background-image: url('assets/lupa.png');
+    background-size: 25px 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 7px 0px 7px 20px;
+}
+#microfono{
+    background-color: #272727;
+    width: 40px;
+    height: 40px;
+    clip-path: circle(50%);
+    margin: 12px;
+}
+#microfono:hover{
+    background-color: #3D3D3D;
+}
+#microfono > button{
+    border:none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: url('assets/microfono.png');
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+#derecho{
+    filter:invert(100%);
+    width: 300px;
+    height: 40px;
+    display:flex;
+}
+#derecho > div {
+    width: 25px;
+    height: 25px;
+    margin:10px;
+}
