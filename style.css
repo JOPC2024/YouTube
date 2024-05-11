@@ -207,3 +207,16 @@ body{
     filter: invert(100%);
     margin:12px 0px 0px 0px;
 }
+main{
+    display: flex;
+}
+#catalogoExt > #catalogoInt{
+    display: flex;
+    width: 100%;
+}
+#catalogoExt > #catalogoInt > div{
+    border-radius: 10px;
+    background-color: #3D3D3D;
+    margin: 10px 5px 10px 5px;
+    padding: 10px 15px 10px 15px;
+}
